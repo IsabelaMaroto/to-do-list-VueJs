@@ -5,13 +5,14 @@
     </div>
   </header>
   <div v-if="!editMode" class="list">
+    <h2>Suas tarefas:</h2>
     <todo-list 
       v-bind:todos="todos" 
       @deleteTodo="deleteTodo" 
       @editTodo="editTodo"
     />
     <div class="button">
-      <ButtonType @click="newTodo">Novo</ButtonType>
+      <ButtonType @click="newTodo">Criar</ButtonType>
     </div>
   </div>
   
